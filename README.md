@@ -1,6 +1,6 @@
 ## just-a-browserify-server
 
-A simple, zero config Browserify server to save you from repeating yourself
+A simple, zero config Browserify server with customized [index.html](http://github.com/azer/indexhtml)
 
 ## Install
 
@@ -21,4 +21,4 @@ serve('index.js', 'localhost:3000', function () {
 })
 ```
 
-This will browserify index.js and serve your app with a customized main HTML file.
+This will browserify index.js and serve your app with a customized main HTML file. See [indexhtml](http://github.com/azer/indexhtml) for more options.
