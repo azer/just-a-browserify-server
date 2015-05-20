@@ -18,7 +18,7 @@
   "license": "BSD",
   "dependencies": {
     "browserify": "^10.2.0",
-    "indexhtml": "0.0.0",
+    "indexhtml": "0.0.2",
     "just-a-server": "0.0.0"
   }
 }
