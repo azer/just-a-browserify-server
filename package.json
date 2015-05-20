@@ -1,0 +1,24 @@
+{
+  "name": "just-a-browserify-server",
+  "version": "0.0.0",
+  "description": "A simple, zero config Browserify server to save you from repeating yourself",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "server",
+    "browserify"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/just-a-browserify-server.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "dependencies": {
+    "browserify": "^10.2.0",
+    "format-text": "0.0.3",
+    "just-a-server": "0.0.0"
+  }
+}
