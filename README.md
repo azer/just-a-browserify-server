@@ -15,7 +15,8 @@ var serve = require('just-a-browserify-server')
 serve('index.js', 'localhost:3000', function () {
   return {
     title: 'hello world',
-    content: '<h1>hi there</h1>'
+    content: '<h1>hi there</h1>',
+    css: ['default.css', 'pretty.css']
   };
 })
 ```
