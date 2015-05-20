@@ -1,6 +1,6 @@
 {
   "name": "just-a-browserify-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple, zero config Browserify server to save you from repeating yourself",
   "main": "index.js",
   "scripts": {
