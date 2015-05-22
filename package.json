@@ -18,7 +18,11 @@
   "license": "BSD",
   "dependencies": {
     "browserify": "^10.2.0",
+    "concat-stream": "^1.4.8",
+    "faye-websocket": "^0.9.4",
     "indexhtml": "0.0.2",
-    "just-a-server": "0.0.0"
+    "just-a-server": "0.0.0",
+    "pubsub": "^1.0.2",
+    "watchify": "^3.2.1"
   }
 }

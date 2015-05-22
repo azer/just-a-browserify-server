@@ -1,19 +1,25 @@
 var serve = require("just-a-server");
-var browserify = require("browserify");
 var indexhtml = require("indexhtml");
 var path = require("path");
+var live = require("./live-server");
 
 module.exports = start;
 
-function start (entry, hostname, contextFn) {
-  serve(path.dirname(entry), hostname, function (path, req, res) {
+function start (options, hostname, contextFn) {
+  if (typeof options == 'string') {
+    options = {
+      entry: options
+    };
+  }
+
+  live(options, serve(path.dirname(options.entry), hostname, function (path, req, res) {
     if (path == 'dist.js') {
-      build(entry).pipe(res);
+      res.end(live.bundle);
       return true;
     }
 
     if (path == 'index.html') return main(req, res, contextFn);
-  });
+  }));
 }
 
 function main (req, res, contextFn) {
@@ -23,10 +29,4 @@ function main (req, res, contextFn) {
   context.js.push('dist.js');
 
   res.end(indexhtml(context));
-}
-
-function build (entry) {
-  var b = browserify();
-  b.add(entry);
-  return b.bundle();
 }

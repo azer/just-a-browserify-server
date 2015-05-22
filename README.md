@@ -1,6 +1,6 @@
 ## just-a-browserify-server
 
-A simple, zero config Browserify server with customized [index.html](http://github.com/azer/indexhtml)
+A simple, zero config Browserify server with customized [index.html](http://github.com/azer/indexhtml) which gets refreshed when you update the code.
 
 ## Install
 
